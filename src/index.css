@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  /* A very soft light gray for the outer background */
+  --bg-main: #f8fafc; 
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  /* This ensures the red-flash and white-fade look smooth */
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 100vh;
+}
